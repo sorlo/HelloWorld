@@ -1,6 +1,6 @@
 // JavaScript Document
 function popup(){
-	window.print();
+	$("#dialog").dialog();
 }
 
 function clickHandler(e){
@@ -10,3 +10,8 @@ function clickHandler(e){
 document.addEventListener('DOMContentLoaded', function(){
 	document.querySelector('button').addEventListener('click', clickHandler);
 });
+
+$(document).ready(function() {
+    $('a').css({'background-color': 'yellow'});
+});
+
