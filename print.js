@@ -1,6 +1,15 @@
 // JavaScript Document
 function popup(){
 	$("#dialog").dialog();
+	chrome.app.window.create('window.html', {
+        top: 128,
+        left: 428 + 5,
+        width: 300,
+        height: 300,
+        minHeight: 300,
+        maxWidth: 500,
+        minWidth: 300
+   });
 }
 
 function clickHandler(e){
@@ -12,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 $(document).ready(function() {
-    $('a').css({'background-color': 'yellow'});
+    $( "#tabs" ).tabs();
+
 });
 
